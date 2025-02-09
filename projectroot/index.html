@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Халява от Nukes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="preloadAudio" hidden>
+        <source src="sounds/ckilk.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="images/fon-obychnyj-11.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <img src="images/shapka.png" alt="Шапка">
+        </header>
+        <div class="grid"></div>
+    </div>
+
+    <div id="instructionModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <div class="modal-body" id="modalContent"></div>
+        </div>
+    </div>
+
+    <div id="soundAlert" class="sound-alert">
+        🔈 Нажмите в любом месте для активации звуков
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <div class="top-bar" id="topBar">
+        <img src="images/zaberi-halyavu.png" alt="Логотип">
+        <div class="nav-buttons">
+            <button class="nav-btn" data-link="https://www.youtube.com/@nukes1908">YouTube</button>
+            <button class="nav-btn" data-link="https://t.me/Nukes887">Розыгрыши</button>
+            <button class="nav-btn" id="contactsBtn">Контакты</button>
+        </div>
+    </div>
+
+    <div id="contactsModal" class="contacts-modal">
+        <div class="contacts-content">
+            <h2>Мои социальные сети</h2>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@nukes1908" class="social-link" target="_blank">
+                    <img src="images/youtube-icon.png" alt="YouTube">
+                    YouTube Основной
+                </a>
+                <a href="https://www.youtube.com/@TeelDor" class="social-link" target="_blank">
+                    <img src="images/youtube-icon.png" alt="YouTube">
+                    YouTube Второй
+                </a>
+                <a href="https://t.me/Nukes887" class="social-link" target="_blank">
+                    <img src="images/tg-icon.png" alt="Telegram">
+                    Telegram
+                </a>
+                <a href="https://vk.com/id528780239" class="social-link" target="_blank">
+                    <img src="images/vk-icon.png" alt="VK">
+                    ВКонтакте
+                </a>
+                <a href="https://www.instagram.com/egor_gvrl/" class="social-link" target="_blank">
+                    <img src="images/insta-icon.png" alt="Instagram">
+                    Instagram
+                </a>
+            </div>
+            <button class="close-btn" id="closeContactsBtn">Закрыть</button>
+        </div>
+    </div>
+
+<audio id="preloadAudio" hidden>
+    <source src="sounds/ckilk.mp3" type="audio/mpeg"> <!-- Указать правильный путь -->
+</audio>
+
+    <footer class="footer">
+        <p>Nukes.site не публикует контент с призывом приобрести товар или услугу, оборот которых запрещен или ограничен законодательством.</p>
+        <p>Также не несет ответственности за неправильную информацию о бонусах, предложениях, акциях перечисленных на сайте.</p>
+        <p>© 2025</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
